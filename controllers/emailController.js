@@ -15,7 +15,7 @@ exports.formSubmission = async (req, res) => {
   try {
     await resend.emails.send({
       from: "Cotter and Knuckle <noreply@noreply.com.ng>",
-       to: ["tsgcode201@gmail.com"],
+       to: ["lifechat@cotterandknuckleengineering.com"],
       subject: "New Inquiry Received", 
       text: `
 Hello, you just received an inquiry form from ${name}.
@@ -65,7 +65,7 @@ exports.inquirySubmission = async (req, res) => {
   try {
     await resend.emails.send({
       from: "Cotter and Knuckle <noreply@noreply.com.ng>",
-       to: ["tsgcode201@gmail.com"],
+      to: ["lifechat@cotterandknuckleengineering.com"],
       subject: "New Inquiry Received",
       text: `
 Hello, you just received an inquiry form from ${name}.
@@ -120,8 +120,8 @@ exports.sendVerificationCode = async (req, res) => {
     const token = jwt.sign({ verify }, process.env.JWT_SECRET);
 
     await resend.emails.send({
-      from: process.env.MAIL_SENDER,
-      to: email,
+       from: "Cotter and Knuckle <noreply@noreply.com.ng>",
+    to: ["lifechat@cotterandknuckleengineering.com"],
       subject: "Email Verification Code",
       text: `Your verification code is: ${verify}`,
       html: `Your verification code is: <strong>${verify}</strong>`,
@@ -168,7 +168,7 @@ exports.Subscribe = async (req, res) => {
   try {
     await resend.emails.send({
        from: "Cotter and Knuckle <noreply@noreply.com.ng>",
-       to: ["tsgcode201@gmail.com"],
+         to: ["lifechat@cotterandknuckleengineering.com"],
       subject: "New Subscription Request",
       text: `Dear Admin, you have a new subscriber: ${email}`,
       html: `
