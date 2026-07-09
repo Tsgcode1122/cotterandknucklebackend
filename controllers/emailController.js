@@ -15,7 +15,7 @@ exports.formSubmission = async (req, res) => {
   try {
     await resend.emails.send({
       from: "Cotter and Knuckle <noreply@noreply.com.ng>",
-       to: ["gemluxemedspa@gmail.com"],
+       to: ["tsgcode201@gmail.com"],
       subject: "New Inquiry Received", 
       text: `
 Hello, you just received an inquiry form from ${name}.
@@ -65,7 +65,7 @@ exports.inquirySubmission = async (req, res) => {
   try {
     await resend.emails.send({
       from: "Cotter and Knuckle <noreply@noreply.com.ng>",
-       to: ["gemluxemedspa@gmail.com"],
+       to: ["tsgcode201@gmail.com"],
       subject: "New Inquiry Received",
       text: `
 Hello, you just received an inquiry form from ${name}.
@@ -168,7 +168,7 @@ exports.Subscribe = async (req, res) => {
   try {
     await resend.emails.send({
        from: "Cotter and Knuckle <noreply@noreply.com.ng>",
-       to: ["gemluxemedspa@gmail.com"],
+       to: ["tsgcode201@gmail.com"],
       subject: "New Subscription Request",
       text: `Dear Admin, you have a new subscriber: ${email}`,
       html: `
